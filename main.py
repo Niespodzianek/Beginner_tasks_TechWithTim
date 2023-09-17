@@ -15,15 +15,15 @@ def program():
                 break
 
 def log_in(login, users):
-    licznik = 1
-    while licznik != 4:
+    counter = 1
+    while counter != 4:
         user_password = input("Podaj hasło: ")
-        if users[login] != user_password and licznik < 3:
+        if users[login] != user_password and counter < 3:
             print(f"Nieprawidłowe hasło !!! Możesz próbować jeszcze {3 - licznik}x")
-            licznik += 1
-        elif users[login] != user_password and licznik == 3:
+            counter += 1
+        elif users[login] != user_password and counter == 3:
             print(f"Użytkownik niezalogowany")
-            licznik += 1
+            counter += 1
         else:
             print("Użytkownik zalogowany")
             break
