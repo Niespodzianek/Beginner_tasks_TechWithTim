@@ -1,12 +1,10 @@
 import random
 
 colors = ["red", "yellow", "blue", "pink", "green", "brown", "cyan", "orange"]
-
+print(f"Dostępne kolory to:\n{colors}")
 random.shuffle(colors)
 choosen_colors = colors[:4]
-print(f"Dostępne kolory to:\n{colors}")
 print(f"Debug: wylosowane kolory to: {choosen_colors}")
-
 
 counter = 0
 while counter < 10:
